@@ -1,0 +1,29 @@
+.Wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+img {
+    padding: 1em;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid aqua;
+    border-radius: 1.5em;
+    box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.25);
+    background-color: aqua;
+    transition: all 450ms ease-in-out;
+    width: 18em;
+    height: 22em;
+    margin: 0.8em;
+}
+
+.Container:hover {
+    transform: scale(1.055) rotateZ(8deg);
+    box-shadow: 12px 6px 5px rgba(0, 0, 0, 0.25);
+}
