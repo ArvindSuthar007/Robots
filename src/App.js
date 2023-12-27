@@ -2,14 +2,13 @@ import React, { Component } from "react";
 import CardArray from './CardArray';
 import Search from "./Search";
 import './App.css';
-import { robots } from "./robots";
 
 
 class App extends Component {
     constructor() {
         super()
         this.state = {
-            robots: robots,
+            robots: [],
             searchbox: '',
         }
     }
@@ -17,13 +16,20 @@ class App extends Component {
     onSearching = (event) => {
         this.setState({ searchbox: event.target.value });
     }
+
+    componentDidMount() {
+        fetch('https://jsonplaceholder.typicode.com/users')
+        .then(response => response.json())
+        .then(users => this.setState({ robots: users}));
+    }
     
     render() {
         let filterbots = this.state.robots.filter(robot => {
             return robot.name.toLowerCase().includes(this.state.searchbox.toLowerCase());
         });
 
-        return(
+        if(this.state.robots.length === 0) { return <h1>Loading</h1> }
+        else return(
             <>
                 <div className="head">
                     <h1>Pretty Cats</h1>
