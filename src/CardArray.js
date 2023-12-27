@@ -1,8 +1,7 @@
 import React from 'react';
-import { robots } from './robots';
 import Card from './card';
 
-const CardArray = () => {
+const CardArray = ({ robots }) => {
     return(
         <>
             {
