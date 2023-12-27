@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import CardArray from './CardArray';
+import Search from "./Search";
 import './App.css';
 import { robots } from "./robots";
 
@@ -26,7 +27,7 @@ class App extends Component {
             <>
                 <div className="head">
                     <h1>Pretty Cats</h1>
-                    <input type="search" placeholder="Cat name" onChange={this.onSearching} />
+                    <Search onSearch={this.onSearching} />
                 </div>
                 <div className='Containers'>
                     <CardArray robots={ filterbots } />
