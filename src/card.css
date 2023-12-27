@@ -20,7 +20,7 @@ img {
     border-radius: 1.5em;
     box-shadow: 8px 10px 5px rgba(0, 0, 0, 0.25);
     background-color: aqua;
-    transition: all 450ms ease-in-out;
+    transition: all 300ms ease-in-out;
     width: 15em;
     height: 20em;
     margin: 0.8em;
