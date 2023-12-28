@@ -14,9 +14,7 @@ const mystyle = {
 
 const Search = ({ onSearch }) => {
     return(
-        <>
-            <input style={mystyle} type="search" placeholder="search here" onChange={onSearch}/>
-        </>
+        <input style={mystyle} type="search" placeholder="search here" onChange={onSearch}/>
     );
 }
 

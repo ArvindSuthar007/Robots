@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './card';
+import Card from '../Add-on/card';
 
 const CardArray = ({ robots }) => {
     return(
