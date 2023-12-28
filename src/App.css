@@ -10,7 +10,7 @@
   align-items: center;
 }
 
-.head h1 {
+.head h1, .loader {
   font-family: 'customFont', sans-serif;
   font-size: 4em;
   font-weight: lighter;

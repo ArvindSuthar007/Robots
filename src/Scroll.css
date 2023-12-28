@@ -1,0 +1,11 @@
+.diver {
+    overflow-y: scroll;
+    border: 1px solid aqua;
+    height: 40em;
+    width: 80em;
+    margin: auto;
+    &::-webkit-scrollbar {
+    display: none;
+    };
+}            
+            
