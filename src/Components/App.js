@@ -13,7 +13,7 @@ class App extends Component {
             searchbox: '',
         }
     }
-    
+
     onSearching = (event) => {
         this.setState({ searchbox: event.target.value });
     }
@@ -23,7 +23,7 @@ class App extends Component {
         .then(response => response.json())
         .then(users => this.setState({ robots: users}));
     }
-    
+
     render() {
         const { robots, searchbox } = this.state;
 
