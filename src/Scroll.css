@@ -1,9 +1,8 @@
 .diver {
     overflow-y: scroll;
-    border: 1px solid aqua;
-    height: 40em;
-    width: 80em;
-    margin: auto;
+    border: 0px dashed aqua;
+    height: 42.5em;
+    width: auto;
     &::-webkit-scrollbar {
     display: none;
     };
