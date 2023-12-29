@@ -1,9 +1,9 @@
 .scrollbox {
-    border: 0 dashed aqua;
+    border: 1px dashed aqua;
     overflow: scroll;
-    height: 23.7rem;
+    flex: 1;
     width: auto;
     &::-webkit-scrollbar {
-    display: none;
+        display: none;
     };
 }

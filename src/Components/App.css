@@ -3,22 +3,20 @@
   src: url("../Add-on/customFont.ttf") format("truetype");
 }
 
+.topContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .head {
   display: flex;
+  height: 20vh;
   justify-content: space-between;
   align-items: center;
   padding: 0 5rem;
 }
 
-@media (max-width: 768px) {
-  .head {
-    flex-direction: column;
-  }
-
-  .head h1 {
-    text-align: center;
-  }
-}
 
 .head h1,
 .loader {
@@ -31,6 +29,22 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  height: 70vh;
   gap: 1em;
   margin: 1em;
 }
+
+  @media (max-width: 768px) {
+    .head {
+      flex-direction: column;
+      height: 35vh
+    }
+  
+    .head h1 {
+      text-align: center;
+    }
+
+    .Containers {
+      height: 55vh;
+    }
+  }

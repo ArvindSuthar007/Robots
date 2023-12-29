@@ -35,7 +35,7 @@ class App extends Component {
         return !robots.length ?
             <h1 className="loader">Loading....</h1>
             :(
-                <>
+                <div className="topContainer">
                     <div className="head">
                         <h1>Pretty<br />Cats</h1>
                         <Search onSearch={this.onSearching} />
@@ -48,7 +48,7 @@ class App extends Component {
                             </ErrorHandler>
                         </div>
                     </Scroll>
-                </>
+                </div>
             );
     }
 }
