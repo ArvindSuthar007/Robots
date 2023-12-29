@@ -3,6 +3,7 @@ import CardArray from './CardArray';
 import Search from "../Add-on/Search";
 import Scroll from "../Add-on/Scroll";
 import './App.css';
+import ErrorHandler from "../Add-on/ErrorHandler";
 
 
 class App extends Component {
@@ -41,7 +42,9 @@ class App extends Component {
                     </div>
                     <Scroll>
                         <div className='Containers'>
-                            <CardArray robots={ filterbots } />
+                            <ErrorHandler>
+                                <CardArray robots={ filterbots } />
+                            </ErrorHandler>
                         </div>
                     </Scroll>
                 </>
