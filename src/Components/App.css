@@ -23,13 +23,12 @@
 .head h1,
 .loader {
   font-family: "customFont", sans-serif;
-  font-size: 4em;
+  font-size: 3rem;
   font-weight: lighter;
 }
 
 .Containers {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1em;

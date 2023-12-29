@@ -3,7 +3,7 @@ import './Scroll.css';
 
 const Scroll = (props) => {
     return(
-        <div className="diver">
+        <div className="scrollbox">
             { props.children }
         </div>
     );

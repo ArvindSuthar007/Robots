@@ -1,10 +1,9 @@
-.diver {
-    overflow-y: scroll;
-    border: 0px dashed aqua;
-    height: 42.5em;
+.scrollbox {
+    border: 0 dashed aqua;
+    overflow: scroll;
+    height: 23.7rem;
     width: auto;
     &::-webkit-scrollbar {
     display: none;
     };
-}            
-            
+}

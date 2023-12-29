@@ -40,6 +40,7 @@ class App extends Component {
                         <h1>Pretty<br />Cats</h1>
                         <Search onSearch={this.onSearching} />
                     </div>
+                    <br />
                     <Scroll>
                         <div className='Containers'>
                             <ErrorHandler>
