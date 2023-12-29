@@ -1,5 +1,5 @@
 .scrollbox {
-    border: 1px dashed aqua;
+    border: 0px dashed aqua;
     overflow: scroll;
     flex: 1;
     width: auto;

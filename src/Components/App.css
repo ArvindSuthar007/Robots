@@ -37,7 +37,7 @@
   @media (max-width: 768px) {
     .head {
       flex-direction: column;
-      height: 35vh
+      height: 30vh
     }
   
     .head h1 {
@@ -45,6 +45,6 @@
     }
 
     .Containers {
-      height: 55vh;
+      height: 60vh;
     }
   }
