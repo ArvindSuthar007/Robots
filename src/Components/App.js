@@ -37,7 +37,7 @@ class App extends Component {
             :(
                 <>
                     <div className="head">
-                        <h1>Pretty Cats</h1>
+                        <h1>Pretty<br />Cats</h1>
                         <Search onSearch={this.onSearching} />
                     </div>
                     <Scroll>

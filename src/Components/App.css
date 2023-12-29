@@ -1,27 +1,37 @@
 @font-face {
-  font-family: 'customFont';
-  src: url('../Add-on/customFont.ttf') format('truetype');
+  font-family: "customFont";
+  src: url("../Add-on/customFont.ttf") format("truetype");
 }
 
 .head {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 5rem;
 }
 
-.head h1, .loader {
-  font-family: 'customFont', sans-serif;
+@media (max-width: 768px) {
+  .head {
+    flex-direction: column;
+  }
+
+  .head h1 {
+    text-align: center;
+  }
+}
+
+.head h1,
+.loader {
+  font-family: "customFont", sans-serif;
   font-size: 4em;
   font-weight: lighter;
-  margin: 0.5em 10em 0 1em;
 }
 
 .Containers {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1em;
-    margin: 1em;
-  }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  margin: 1em;
+}
