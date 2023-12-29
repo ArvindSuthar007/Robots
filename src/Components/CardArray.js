@@ -4,8 +4,13 @@ import Card from '../Add-on/card';
 const CardArray = ({ robots }) => {
     return(
         <>
-            {
-                robots.map((user, i) => {
+            {   !robots.length ?
+                <h1 style={{
+                    fontFamily: "customFont",
+                    fontWeight: "lighter",
+                }}>No matching results!!...</h1>
+
+                :robots.map((user, i) => {
                         return(
                             <Card 
                                 key={robots[i].id} 
